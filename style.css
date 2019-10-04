@@ -1,0 +1,42 @@
+body{
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    text-align: center;
+}
+
+h2{
+    margin: 0px;
+}
+
+.wrapper div:nth-child(odd){
+    background-color: #b8336a;
+}
+
+.wrapper div:nth-child(even){
+    background-color: #7d8cc4;
+}
+
+.wrapper{
+    margin:0px auto;
+    width:800px;
+    color:black;
+    min-height: 100%;
+    display: grid;
+    grid-template:repeat(6, 1fr) / repeat(6,1fr);
+    grid-gap:10px;
+}
+
+div{
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+#twentyThree{
+    font-size: 150px;
+    grid-column: 5/7;
+    grid-row: 4/6;
+}
